@@ -270,28 +270,23 @@
           document.body.classList.toggle("menu-open");
         });
 
-      // const animations = document.querySelectorAll(".animation");
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   // Выбираем все контейнеры .animation-inner
+      //   const animationContainers =
+      //     document.querySelectorAll(".animation-inner");
 
-      // // If a user hasn't opted in for recuded motion, then we add the animation
-      // if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      //   addAnimation();
-      // }
+      //   // Для каждого контейнера выполняем дублирование изображений
+      //   animationContainers.forEach((container) => {
+      //     const images = container.querySelectorAll("img");
+      //     const imageCount = images.length;
 
-      // function addAnimation() {
-      //   animations.forEach((animation) => {
-      //     animation.setAttribute("data-animated", true);
-
-      //     const animationInner = document.querySelectorAll(".animation-inner");
-      //     const animationContent = Array.from(animationInner.children);
-
-      //     animationContent.forEach((item) => {
-      //       const duplicatedItem = item.cloneNode(true);
-      //       duplicatedItem.setAttribute("aria-hidden", true);
-      //       animationInner.appendChild(duplicatedItem);
-      //     });
-      //     addAnimation();
+      //     // Клонируем изображения
+      //     for (let i = 0; i < imageCount; i++) {
+      //       const clone = images[i].cloneNode(true); // Клонируем изображение
+      //       container.appendChild(clone); // Добавляем клон в конец контейнера
+      //     }
       //   });
-      // }
+      // });
     </script>
   </body>
 </html>
