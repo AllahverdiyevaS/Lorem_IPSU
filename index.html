@@ -270,23 +270,23 @@
           document.body.classList.toggle("menu-open");
         });
 
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   // Выбираем все контейнеры .animation-inner
-      //   const animationContainers =
-      //     document.querySelectorAll(".animation-inner");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Выбираем все контейнеры .animation-inner
+        const animationContainers =
+          document.querySelectorAll(".animation-inner");
 
-      //   // Для каждого контейнера выполняем дублирование изображений
-      //   animationContainers.forEach((container) => {
-      //     const images = container.querySelectorAll("img");
-      //     const imageCount = images.length;
+        // Для каждого контейнера выполняем дублирование изображений
+        animationContainers.forEach((container) => {
+          const images = container.querySelectorAll("img");
+          const imageCount = images.length;
 
-      //     // Клонируем изображения
-      //     for (let i = 0; i < imageCount; i++) {
-      //       const clone = images[i].cloneNode(true); // Клонируем изображение
-      //       container.appendChild(clone); // Добавляем клон в конец контейнера
-      //     }
-      //   });
-      // });
+          // Клонируем изображения
+          for (let i = 0; i < imageCount; i++) {
+            const clone = images[i].cloneNode(true); // Клонируем изображение
+            container.appendChild(clone); // Добавляем клон в конец контейнера
+          }
+        });
+      });
     </script>
   </body>
 </html>
